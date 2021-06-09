@@ -21,3 +21,27 @@ print(list(map(func, li)))
 
 # This is doing it in a list comprehension [] returns it to a list. Adding the modulo is a condition only for even numbers
 print([func(x) for x in li if x % 2 == 0])
+
+
+#List Comprehension:
+'''
+https://www.w3schools.com/python/python_lists_comprehension.asp
+newlist = [expression for item in iterable if condition == True]
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+1.) 
+    for x in fruits:
+    if "a" in x:
+        newlist.append(x)
+    print(newlist)
+
+equivalent to 
+
+2.) 
+    fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+    newlist = [x for x in fruits if "a" in x]
+    print(newlist)
+
+'''
